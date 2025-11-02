@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>层级排行榜系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎯 层级排行榜系统</h1>
+            <p>拖拽项目到对应的等级分类</p>
+        </header>
+
+        <main class="tier-list">
+            <!-- S级 - 夯 -->
+            <div class="tier-row" data-tier="S">
+                <div class="tier-label tier-s">夯</div>
+                <div class="tier-content" data-tier="S">
+                    <div class="placeholder">拖拽项目到夯等级</div>
+                </div>
+            </div>
+
+            <!-- A级 - 顶级 -->
+            <div class="tier-row" data-tier="A">
+                <div class="tier-label tier-a">顶级</div>
+                <div class="tier-content" data-tier="A">
+                    <div class="placeholder">拖拽项目到顶级等级</div>
+                </div>
+            </div>
+
+            <!-- B级 - 人上人 -->
+            <div class="tier-row" data-tier="B">
+                <div class="tier-label tier-b">人上人</div>
+                <div class="tier-content" data-tier="B">
+                    <div class="placeholder">拖拽项目到人上人等级</div>
+                </div>
+            </div>
+
+            <!-- C级 - NPC -->
+            <div class="tier-row" data-tier="C">
+                <div class="tier-label tier-c">NPC</div>
+                <div class="tier-content" data-tier="C">
+                    <div class="placeholder">拖拽项目到NPC等级</div>
+                </div>
+            </div>
+
+            <!-- D级 - 拉完了 -->
+            <div class="tier-row" data-tier="D">
+                <div class="tier-label tier-d">拉完了</div>
+                <div class="tier-content" data-tier="D">
+                    <div class="placeholder">拖拽项目到拉完了等级</div>
+                </div>
+            </div>
+        </main>
+
+        <section class="drag-area">
+            <h3>📋 待评价项目</h3>
+            <div class="items-container" id="itemsContainer">
+                <div class="item" draggable="true" data-id="1">项目1</div>
+                <div class="item" draggable="true" data-id="2">项目2</div>
+                <div class="item" draggable="true" data-id="3">项目3</div>
+                <div class="item" draggable="true" data-id="4">项目4</div>
+                <div class="item" draggable="true" data-id="5">项目5</div>
+                <div class="item" draggable="true" data-id="6">项目6</div>
+                <div class="item" draggable="true" data-id="7">项目7</div>
+                <div class="item" draggable="true" data-id="8">项目8</div>
+                <div class="item" draggable="true" data-id="9">项目9</div>
+                <div class="item" draggable="true" data-id="10">项目10</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>🎮 拖拽功能 | 💾 自动保存 | 🔄 支持重置</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
